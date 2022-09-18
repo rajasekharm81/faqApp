@@ -1,0 +1,16 @@
+.mainContainer {
+  background-color: #f1f5f8;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  background-color: white;
+  height: 85vh;
+  border-radius: 15px;
+  text-align: center;
+  overflow: auto;
+}
