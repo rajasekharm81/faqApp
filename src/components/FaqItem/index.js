@@ -16,7 +16,7 @@ class FaqItem extends Component {
 
     const altText = check ? 'minus' : 'plus'
     return (
-      <div className="faqItemContainer">
+      <li className="faqItemContainer">
         <div className="itemContainer">
           <h3>{item.questionText}</h3>
           <button onClick={this.sendId} className="toggleButton" type="button">
@@ -29,7 +29,7 @@ class FaqItem extends Component {
             <p>{item.answerText}</p>
           </div>
         )}
-      </div>
+      </li>
     )
   }
 }

@@ -23,15 +23,17 @@ class Faqs extends Component {
       <div className="mainContainer">
         <div className="Card">
           <h1>FAQs</h1>
-          {faqsList.map(each => (
-            <FaqItem
-              appendFn={this.appendingItemNumber}
-              check={itemsList.includes(each.id)}
-              id={each.id}
-              key={each.id}
-              item={each}
-            />
-          ))}
+          <ul>
+            {faqsList.map(each => (
+              <FaqItem
+                appendFn={this.appendingItemNumber}
+                check={itemsList.includes(each.id)}
+                id={each.id}
+                key={each.id}
+                item={each}
+              />
+            ))}
+          </ul>
         </div>
       </div>
     )
